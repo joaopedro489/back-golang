@@ -1,0 +1,17 @@
+meta {
+  name: Edit
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{url}}/users/5
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "Name": "Jpc"
+  }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Add User
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{url}}/users
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "Name": "Joao Pedro",
+    "Email": "joao.cavalcante@coalasaude.com.br",
+    "Birthday": "2000-12-16T00:00:00Z",
+    "Password": "NovaSenha12."
+  }
+}

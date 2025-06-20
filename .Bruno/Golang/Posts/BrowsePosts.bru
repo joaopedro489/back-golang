@@ -1,0 +1,20 @@
+meta {
+  name: BrowsePosts
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url}}/posts?Limit=10&UserId=3
+  body: none
+  auth: bearer
+}
+
+params:query {
+  Limit: 10
+  UserId: 3
+}
+
+auth:bearer {
+  token: {{token}}
+}

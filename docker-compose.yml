@@ -1,0 +1,12 @@
+version: "3"
+services:
+  postgres:
+    image: postgis/postgis
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=asd
+      - POSTGRES_DB=golang
+    ports:
+      - "5432:5432"
+    volumes:
+      - "./.data/postgres:/var/lib/postgresql/data"

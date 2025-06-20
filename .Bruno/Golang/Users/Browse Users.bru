@@ -1,0 +1,17 @@
+meta {
+  name: Browse Users
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url}}/users?Limit=2&Offset=0&Search=J
+  body: none
+  auth: inherit
+}
+
+params:query {
+  Limit: 2
+  Offset: 0
+  Search: J
+}
